@@ -1,0 +1,90 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; /* Get rid of all font sizes and heights */
+}
+
+html {
+  color-scheme: dark light; /* Default dark */
+  hanging-punctuation: first last; /* Not supported in Chrome */
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Media responsive */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  max-width: 75ch;
+  text-wrap: pretty; /* Prevents orphans on lines */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+
+/* Header */
+
+header {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Light & Dark Toggle */
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
+  border: 2px solid #000;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.toggle-outer-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #000;
+  border-radius: 50%;
+  margin-inline: 0.25rem;
+}
+
+.toggle-inner-circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
