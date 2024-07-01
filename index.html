@@ -3,19 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Design, Web Development, Long Beach, CA" />
+
+    <!-- Preload -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/NeuethingSans-BlackSemiExpanded.woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/NeuethingSans-Bold.woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/NeuethingSans-Regular.woff2"
+      crossorigin />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
     <link rel="stylesheet" href="./css/core-styles.css" />
     <title>Web Design & Development | Long Beach, CA</title>
   </head>
   <body>
-    <!-- Header -->
+    <!--======== Header ========-->
 
     <header>
-      <img
-        src="./assets/svg/lbww-mark.svg"
-        alt="Long Beach WebWorks logo mark"
-        width="80"
-        height="80" />
-
       <div class="toggle-wrapper">
         <div
           class="toggle-container"
@@ -30,5 +65,45 @@
         <div class="toggle-label">Light Mode</div>
       </div>
     </header>
+
+    <!--========= Hero =========-->
+
+    <section class="hero">
+      <h1>coming soon</h1>
+      <img
+        src="./assets/svg/lbww-logo-full.svg"
+        alt="Long Beach WebWorks logo"
+        class="full-logo"
+        width="100%"
+        height="100%" />
+      <p>
+        <strong
+          >Effective web design and development for small businesses and
+          organizations. Coded by hand in Long Beach, CA.</strong
+        >
+      </p>
+      <a
+        href="mailto:info@longbeachwebworks.com"
+        class="primary-button"
+        aria-label="Email info@longbeachwebworks.com">
+        Email Us
+        <svg
+          class="pb-icon"
+          width="20"
+          height="16"
+          viewBox="0 0 20 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.5272 6.88161L12.9435 0.48707C12.6441 0.181166 12.2304 0.00556906 11.7959 0.000130202C11.3615 -0.00530769 10.9431 0.159788 10.6358 0.458046C10.3284 0.756374 10.158 1.16251 10.1633 1.58451C10.1685 2.00644 10.3489 2.40852 10.6636 2.69952L14.5554 6.4737H1.61193C1.03604 6.4737 0.503909 6.77209 0.215954 7.25649C-0.0719846 7.74091 -0.0719846 8.33774 0.215954 8.82209C0.503893 9.3065 1.03604 9.60494 1.61193 9.60494H14.5194L10.6636 13.3558C10.2734 13.7545 10.1273 14.3228 10.2787 14.8528C10.43 15.3828 10.8567 15.7968 11.4025 15.9434C11.9484 16.0899 12.5334 15.9475 12.9435 15.5682L19.5272 9.1737C19.8307 8.88075 20.0007 8.48203 19.9992 8.06648C20.0003 8.05358 20.0003 8.04055 19.9992 8.02765C20.0002 8.01469 20.0002 8.00173 19.9992 7.98883C19.9991 7.5736 19.8293 7.17536 19.5272 6.8816L19.5272 6.88161Z"
+            fill="#000" />
+        </svg>
+      </a>
+    </section>
+
+    <!--======== Footer ========-->
+    <footer>
+      <p>© 2024 Long Beach Web Works</p>
+    </footer>
   </body>
 </html>
