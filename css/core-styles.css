@@ -65,7 +65,7 @@ html {
 body {
   min-height: 100vh;
   color: var(--black);
-  background-color: var(--grey);
+  background-color: var(--white);
   font-family: "NeuethingSans-Regular", sans-serif;
 }
 
@@ -129,7 +129,6 @@ a {
   border-radius: 2rem;
 
   font-family: "NeuethingSans-Bold", sans-serif;
-  font-weight: 700;
 }
 
 .pb-icon path {
@@ -190,11 +189,6 @@ header {
 .full-logo {
   max-width: 30rem;
 }
-
-/* Footer */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
+.copyright {
+  font-size: 1rem;
 }
