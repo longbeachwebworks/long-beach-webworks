@@ -1,9 +1,7 @@
 :root {
   /* Colors */
   --black: #121416;
-  --grey: #e3e0dd;
   --white: #f2f2f2;
-  --accent: #00e0ca;
 }
 
 /* Fonts */
@@ -66,7 +64,6 @@ body {
   min-height: 100vh;
   color: var(--black);
   background-color: var(--white);
-  font-family: "NeuethingSans-Regular", sans-serif;
 }
 
 /* Media responsive */
@@ -80,13 +77,19 @@ video {
 
 h1 {
   font-family: "NeuethingSans-Black", sans-serif;
+  font-size: clamp(1.5rem, 1.3885rem + 0.5096vw, 2rem);
   line-height: 124%;
+  text-transform: uppercase;
   text-wrap: balance;
+  color: var(--black);
 }
 
 p {
-  max-width: 24rem;
+  font-family: "NeuethingSans-Regular", sans-serif;
+  font-size: clamp(1.125rem, 1.1217rem + 0.107vw, 1.25rem);
+  line-height: 160%;
   text-wrap: pretty; /* Prevents orphans on lines */
+  color: var(--black);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -96,26 +99,10 @@ p {
   }
 }
 
-/* Typography */
-
-h1 {
-  color: var(--black);
-  font-size: clamp(1.5rem, 1.3885rem + 0.5096vw, 2rem);
-  text-transform: uppercase;
-}
-
-p {
-  color: var(--black);
-  font-size: clamp(1.125rem, 1.0971rem + 0.1274vw, 1.25rem);
-  line-height: 160%;
-}
-
-a {
-  font-size: 1.25rem;
-}
-
 /* Buttons */
 .primary-button {
+  font-family: "NeuethingSans-Bold", sans-serif;
+  font-size: clamp(1.125rem, 1.1217rem + 0.107vw, 1.25rem);
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
@@ -126,52 +113,11 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-radius: 2rem;
-
-  font-family: "NeuethingSans-Bold", sans-serif;
+  border-radius: 4rem;
 }
 
 .pb-icon path {
   fill: var(--white);
-}
-
-/* Header */
-
-header {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-/* Light & Dark Toggle */
-
-.toggle-container {
-  display: flex;
-  align-items: center;
-  width: 5rem;
-  height: 2rem;
-  border: 2px solid var(--black);
-  border-radius: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.toggle-outer-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: var(--black);
-  border-radius: 50%;
-  margin-inline: 0.25rem;
-}
-
-.toggle-inner-circle {
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: var(--accent);
-  border-radius: 50%;
 }
 
 /* Hero */
@@ -180,10 +126,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   gap: 2rem;
-  padding-inline: 1rem;
+  padding: 2rem;
 }
 
 .full-logo {
