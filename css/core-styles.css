@@ -389,11 +389,6 @@ p a {
   background: var(--select-hover-bg);
 }
 
-/* .theme-picker select#color-scheme {
-  border-radius: 1rem;
-  padding: 0.125rem;
-} */
-
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
@@ -444,7 +439,7 @@ p a {
     padding-top: 0.5rem;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
 
