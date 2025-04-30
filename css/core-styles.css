@@ -419,7 +419,7 @@ p a {
 
   #cs-navigation {
     width: 100%;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 0 0.5rem 0;
     box-sizing: border-box;
     border-bottom: 1px solid var(--border-color);
     position: fixed;
@@ -436,7 +436,7 @@ p a {
   }
 
   #cs-navigation .cs-container {
-    padding-top: 0.5rem;
+    padding: 1rem 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -637,13 +637,14 @@ p a {
 @media only screen and (min-width: 64rem) {
   #cs-navigation {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0;
     box-sizing: border-box;
     position: fixed;
     z-index: 10000;
   }
 
   #cs-navigation .cs-container {
+    padding-inline: 1rem;
     width: 100%;
     max-width: 100%;
     margin: auto;
