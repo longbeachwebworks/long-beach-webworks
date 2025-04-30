@@ -436,7 +436,7 @@ p a {
   }
 
   #cs-navigation .cs-container {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
