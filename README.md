@@ -1,13 +1,16 @@
 # Long Beach WebWorks LLC Website
 
-This is the coming soon page for Long Beach WebWorks LLC. It was created using HTML and CSS.
+This is the website for Long Beach WebWorks LLC. It was created using HTML, CSS & JavaScript.
 
 ## Technology
 
 - HTML
 - CSS
+- JavaScript
 
 ## Libraries
+
+[CodeStitch](https://codestitch.app/)
 
 ## URL
 

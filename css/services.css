@@ -1,0 +1,330 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1617 {
+    /* 200px - 300px - top leaving extra space for the navigation */
+    /* 160px - 240px bottom */
+    position: relative;
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    overflow: hidden;
+    z-index: 1;
+    min-height: 90dvh;
+  }
+
+  #hero-1617 .cs-container {
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-1617 .cs-content {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1617 .cs-topper {
+    color: var(--body-copy);
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 503px) {
+    #hero-1617 .cs-topper {
+      max-width: 18ch;
+    }
+  }
+
+  #hero-1617 .cs-title {
+    text-align: center;
+    position: relative;
+  }
+
+  #hero-1617 .subheading {
+    text-align: center;
+    max-width: 40rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  #hero-1617 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-1617 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-bg);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  #hero-1617 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Decorative Shapes */
+  #hero-1617 .left-shapes {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    margin-left: -3.5rem;
+    opacity: 0.85;
+  }
+
+  #hero-1617 .left-top-shape {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    transform: rotate(45deg);
+  }
+
+  #hero-1617 .left-bottom-shape {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--headings);
+    transform: rotate(45deg);
+    margin-top: calc(-30%);
+  }
+
+  #hero-1617 .right-shapes {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -2.5rem;
+    opacity: 0.85;
+  }
+
+  #hero-1617 .right-top-shape {
+    position: relative;
+    z-index: 10;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--headings);
+    transform: rotate(45deg);
+  }
+
+  #hero-1617 .right-bottom-shape {
+    position: relative;
+    z-index: -10;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    transform: rotate(45deg);
+    margin-top: calc(-30%);
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  /* Decorative Shapes */
+  #hero-1617 .left-shapes {
+    top: 50%;
+    margin-left: -9rem;
+  }
+
+  #hero-1617 .left-top-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #hero-1617 .left-bottom-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #hero-1617 .right-shapes {
+    top: 50%;
+    margin-right: -9rem;
+  }
+
+  #hero-1617 .right-top-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #hero-1617 .right-bottom-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+/* Large Desktop - Parallax Effect - 1600px */
+@media only screen and (min-width: 100rem) {
+  #hero-1617 {
+    background: url("/assets/img/webp/lbw-dtlb-hero-d.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #hero-1617 .cs-background img {
+    display: none;
+  }
+}
+
+/*-- -------------------------- -->
+<---            Services        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #web-design,
+  #digital-consultation {
+    background-color: var(--services-bg);
+  }
+
+  #web-development,
+  #wordpress-support {
+    background-color: var(--bg-3);
+  }
+
+  #web-design,
+  #web-development,
+  #digital-consultation,
+  #wordpress-support {
+    padding: var(--section-padding);
+    position: relative;
+    z-index: 1;
+  }
+
+  #web-design .services-li,
+  #web-development .services-li,
+  #digital-consultation .services-li,
+  #wordpress-support .services-li {
+    color: var(--body-copy);
+    list-style-type: disc;
+    margin-left: 1rem;
+  }
+
+  #web-design .lbw-icon,
+  #web-development .lbw-icon,
+  #digital-consultation .lbw-icon,
+  #wordpress-support .lbw-icon {
+    margin-bottom: 1rem;
+  }
+
+  #web-design .cs-container,
+  #web-development .cs-container,
+  #digital-consultation .cs-container,
+  #wordpress-support .cs-container {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 5vw, 4rem);
+    position: relative;
+  }
+
+  #web-design .cs-content,
+  #web-development .cs-content,
+  #digital-consultation .cs-content,
+  #wordpress-support .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #web-design .cs-title,
+  #web-development .cs-title,
+  #digital-consultation .cs-title,
+  #wordpress-support .cs-title {
+    color: var(--headings);
+    margin-bottom: 1rem;
+  }
+
+  #web-design .cs-card-group,
+  #web-development .cs-card-group,
+  #digital-consultation .cs-card-group,
+  #wordpress-support .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+  }
+
+  #web-design .cs-item,
+  #web-development .cs-item,
+  #digital-consultation .cs-item,
+  #wordpress-support .cs-item {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    padding: clamp(2rem, 1.2174rem + 3.4783vw, 4rem)
+      clamp(1rem, 0.6087rem + 1.7391vw, 2rem);
+    background-color: var(--card-bg);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-column: span 12;
+    position: relative;
+    z-index: 1;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+  }
+
+  #web-design h3,
+  #web-development h3,
+  #digital-consultation h3,
+  #wordpress-support h3 {
+    color: var(--headings);
+    margin-bottom: 0.5rem;
+  }
+
+  #web-design .cs-item-text,
+  #web-development .cs-item-text,
+  #digital-consultation .cs-item-text,
+  #wordpress-support .cs-item-text {
+    margin-bottom: 1rem;
+    color: var(--body-copy);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #web-design .cs-container,
+  #web-development .cs-container,
+  #digital-consultation .cs-container,
+  #wordpress-support .cs-container {
+    max-width: 80rem;
+  }
+
+  #web-design .cs-item,
+  #web-development .cs-item,
+  #digital-consultation .cs-item,
+  #wordpress-support .cs-item {
+    grid-column: span 6;
+  }
+}

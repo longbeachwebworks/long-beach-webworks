@@ -1,0 +1,443 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1617 {
+    /* 200px - 300px - top leaving extra space for the navigation */
+    /* 160px - 240px bottom */
+    position: relative;
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    overflow: hidden;
+    z-index: 1;
+    min-height: 90dvh;
+  }
+
+  #hero-1617 .cs-container {
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-1617 .cs-content {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1617 .cs-topper {
+    color: var(--body-copy);
+    margin-bottom: 0;
+  }
+
+  #hero-1617 .header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #hero-1617 .header-picture {
+    position: relative;
+    background-color: var(--card-bg);
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0.25rem 0 1rem 0;
+  }
+
+  #hero-1617 .header-picture img {
+    padding-top: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #hero-1617 .cs-title {
+    text-align: center;
+    position: relative;
+  }
+
+  #hero-1617 .subheading {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 40rem;
+  }
+
+  #hero-1617 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-1617 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-bg);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  #hero-1617 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Decorative Shapes */
+  #hero-1617 .left-shapes {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    margin-left: -3.5rem;
+    opacity: 0.85;
+  }
+
+  #hero-1617 .left-top-shape {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    transform: rotate(45deg);
+  }
+
+  #hero-1617 .left-bottom-shape {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--headings);
+    transform: rotate(45deg);
+    margin-top: calc(-30%);
+  }
+
+  #hero-1617 .right-shapes {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -2.5rem;
+    opacity: 0.85;
+  }
+
+  #hero-1617 .right-top-shape {
+    position: relative;
+    z-index: 10;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--headings);
+    transform: rotate(45deg);
+  }
+
+  #hero-1617 .right-bottom-shape {
+    position: relative;
+    z-index: -10;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    transform: rotate(45deg);
+    margin-top: calc(-30%);
+  }
+}
+
+/* Desktop Shapes - 1024px */
+
+@media only screen and (min-width: 64rem) {
+  #hero-1617 .header-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #hero-1617 .header-picture {
+    width: 11rem;
+    height: 11rem;
+    margin: 0;
+  }
+
+  /* Decorative Shapes */
+  #hero-1617 .left-shapes {
+    top: 50%;
+    margin-left: -9rem;
+  }
+
+  #hero-1617 .left-top-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #hero-1617 .left-bottom-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #hero-1617 .right-shapes {
+    top: 50%;
+    margin-right: -9rem;
+  }
+
+  #hero-1617 .right-top-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #hero-1617 .right-bottom-shape {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+/* Large Desktop - Parallax Effect - 1600px */
+@media only screen and (min-width: 100rem) {
+  #hero-1617 {
+    background: url("/assets/img/webp/lbw-dtlb-hero-d.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #hero-1617 .cs-background img {
+    display: none;
+  }
+}
+
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-1674 {
+    padding: var(--section-padding);
+    background-color: var(--services-bg);
+  }
+
+  #steps-1674 .cs-container {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #steps-1674 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #steps-1674 .cs-topper {
+    color: var(--steps-number);
+  }
+
+  #steps-1674 .cs-title {
+    color: var(--footer-header);
+    margin-bottom: 1rem;
+  }
+
+  #steps-1674 .subheading {
+    color: var(--footer-copy);
+    max-width: 30rem;
+  }
+
+  #steps-1674 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    align-items: stretch;
+    grid-auto-flow: row;
+    gap: 1.25rem;
+  }
+
+  #steps-1674 .cs-item {
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #steps-1674 .cs-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fefefe10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  #steps-1674 .cs-item:first-of-type {
+    padding-top: 0;
+  }
+  #steps-1674 .cs-item:last-of-type {
+    padding-bottom: 0;
+  }
+  #steps-1674 .cs-item:last-of-type::after {
+    content: none;
+  }
+  #steps-1674 .cs-number {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+    color: var(--steps-number);
+    display: block;
+  }
+  #steps-1674 .cs-h3 {
+    margin: 0 0 1rem 0;
+    color: var(--footer-header);
+  }
+  #steps-1674 .cs-item-text {
+    text-align: left;
+    margin: 0;
+    color: var(--footer-copy);
+    padding-bottom: 2rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-1674 {
+  }
+  #steps-1674 .cs-container {
+    max-width: 80rem;
+  }
+  #steps-1674 .cs-card-group {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  #steps-1674 .cs-item {
+    padding: 0.5rem;
+  }
+
+  #steps-1674 .cs-item::after {
+    width: 1px;
+    height: 100%;
+    right: 0;
+    left: initial;
+  }
+
+  #steps-1674 .cs-item-text {
+    padding-bottom: 0;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #steps-1674 .cs-card-group {
+    flex-wrap: nowrap;
+  }
+}
+
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-1582 {
+    padding: var(--section-padding);
+    position: relative;
+    z-index: 1;
+  }
+
+  #faq-1582 .cs-container {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 5vw, 4rem);
+    position: relative;
+  }
+
+  #faq-1582 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #faq-1582 .cs-title {
+    color: var(--headings);
+    margin: 0;
+  }
+
+  #faq-1582 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+  }
+
+  #faq-1582 .cs-item {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    padding: 2rem 1rem;
+    background-color: var(--card-bg);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-column: span 12;
+    position: relative;
+    z-index: 1;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+  }
+
+  #faq-1582 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--headings);
+  }
+
+  #faq-1582 .cs-item-text {
+    margin: 0;
+    color: var(--body-copy);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #faq-1582 .cs-container {
+    max-width: 80rem;
+  }
+  #faq-1582 .cs-item {
+    grid-column: span 6;
+  }
+}

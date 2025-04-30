@@ -1,0 +1,63 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1617 {
+    position: relative;
+    padding: clamp(12rem, 25.95vw, 16rem) 1rem clamp(10rem, 15vw, 15rem);
+    overflow: hidden;
+    z-index: 1;
+    min-height: 90dvh;
+    background-color: var(--bg-2);
+  }
+
+  #hero-1617 .cs-container {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  #hero-1617 .cs-content {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1617 .cs-topper {
+    color: var(--primary);
+    margin-bottom: 0;
+  }
+
+  #hero-1617 .cs-title {
+    font-size: clamp(2rem, 1.6087rem + 1.7391vw, 3rem);
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-top: -1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  li {
+    margin-left: 1rem;
+  }
+}

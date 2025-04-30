@@ -1,0 +1,52 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1617 {
+    position: relative;
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    overflow: hidden;
+    z-index: 1;
+    min-height: 90dvh;
+    background-color: var(--bg-2);
+  }
+
+  #hero-1617 .cs-container {
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-1617 .cs-content {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1617 .cs-topper {
+    color: var(--body-copy);
+    margin-bottom: 0;
+  }
+
+  #hero-1617 .cs-title {
+    /* max-width: 30rem; */
+    text-align: center;
+    position: relative;
+  }
+
+  #hero-1617 .subheading {
+    text-align: center;
+    max-width: 40rem;
+    margin: 1rem 0 2rem 0;
+  }
+}

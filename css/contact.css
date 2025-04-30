@@ -1,0 +1,197 @@
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-page {
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    position: relative;
+    z-index: 1;
+    min-height: 90dvh;
+  }
+
+  #contact-page .cs-container {
+    width: 100%;
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-inline: auto;
+  }
+
+  #contact-page .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #contact-page .cs-topper {
+    color: var(--primary);
+    margin-bottom: 0;
+  }
+
+  #contact-page .cs-title {
+    font-size: clamp(2.5rem, 1.3261rem + 5.2174vw, 5rem);
+    color: var(--headings);
+  }
+
+  #contact-page .subheading {
+    margin-bottom: 2rem;
+  }
+
+  #contact-page .cs-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  #contact-page .cs-li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  #contact-page .cs-li:hover .cs-icon-wrapper {
+    transform: scale(1.1);
+  }
+
+  #contact-page .cs-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--primary);
+    display: block;
+  }
+
+  #contact-page .cs-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform var(--transition);
+  }
+
+  #contact-page .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+    stroke: var(--primary);
+  }
+
+  #contact-page .cs-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    gap: 1.25rem;
+  }
+
+  #contact-page .cs-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--headings);
+    width: 100%;
+  }
+
+  #contact-page .cs-input {
+    font-size: 1rem;
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    padding-left: 1.5rem;
+    color: var(--headings);
+    background-color: var(--form-input);
+    border: none;
+    border-radius: 0.25rem;
+  }
+
+  #contact-page .cs-input::placeholder {
+    color: var(--form-placeholder);
+  }
+
+  #contact-page .cs-textarea {
+    font-family: inherit;
+    min-height: 7.5rem;
+    margin: 0;
+    padding-top: 1.5rem;
+    resize: none;
+  }
+
+  #contact-page .cs-submit {
+    width: 100%;
+    max-width: fit-content;
+    margin-top: 1.25rem;
+    margin-inline: auto;
+  }
+
+  #contact-page .cs-submit:hover {
+    background-color: var(--primary);
+    color: var(--button-text);
+    cursor: pointer;
+  }
+
+  #contact-page .cs-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #contact-page .cs-background::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #contact-page .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 64rem) {
+  #contact-page .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  #contact-page .cs-form {
+    padding: 3rem 2rem;
+  }
+}
