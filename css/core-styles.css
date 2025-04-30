@@ -324,10 +324,10 @@ p a {
   border-bottom: 1px solid var(--border-color);
 }
 
-#theme-picker select,
+/* #theme-picker select,
 ::picker(select) {
   appearance: base-select;
-}
+} */
 
 #theme-picker select {
   margin-left: 0.25rem;
