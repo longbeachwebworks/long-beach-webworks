@@ -39,25 +39,25 @@
     margin-bottom: 1.5rem;
   }
 
-  h2 {
+  #hero-1617 h2 {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
   }
 
-  p {
+  #hero-1617 p {
     margin-bottom: 1.5rem;
   }
 
-  p:last-child {
+  #hero-1617 p:last-child {
     margin-bottom: 0;
   }
 
-  ul {
+  #hero-1617 ul {
     margin-top: -1.25rem;
     margin-bottom: 1.5rem;
   }
-  li {
+  #hero-1617 li {
     margin-left: 1rem;
   }
 }
