@@ -5,11 +5,13 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-1617 {
-    position: relative;
+    /* 200px - 300px - top leaving extra space for the navigation */
+    /* 160px - 240px bottom */
     padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(10rem, 15vw, 15rem);
+    /* prevents the topper line from causing an overflow */
     overflow: hidden;
+    position: relative;
     z-index: 1;
-    min-height: 90dvh;
   }
 
   #hero-1617 .cs-container {
@@ -34,7 +36,7 @@
 
   #hero-1617 .cs-topper {
     color: var(--body-copy);
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   @media (max-width: 503px) {
