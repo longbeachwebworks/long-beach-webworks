@@ -72,18 +72,25 @@
       content="#191919"
       media="(prefers-color-scheme: dark)" />
 
+    <!-- Mobile Hero Image -->
     <link
       rel="preload"
-      as="image"
-      href="/assets/img/webp/lbw-dtlb-hero-d.webp"
-      media="(min-width: 601px)"
-      type="image/webp" />
-    <link
-      rel="preload"
+      fetchpriority="high"
       as="image"
       href="/assets/img/webp/lbw-dtlb-hero-m.webp"
-      media="(max-width: 600px)"
-      type="image/webp" />
+      type="image/webp"
+      imagesrcset="/assets/img/webp/lbw-dtlb-hero-m.webp 600w"
+      imagesizes="100vw" />
+
+    <!-- Desktop Hero Image -->
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/assets/img/webp/lbw-dtlb-hero-d.webp"
+      type="image/webp"
+      imagesrcset="/assets/img/webp/lbw-dtlb-hero-d.webp 1920w"
+      imagesizes="(min-width: 1024px) 100vw" />
 
     <link
       rel="preload"
