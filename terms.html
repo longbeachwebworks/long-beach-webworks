@@ -374,11 +374,11 @@
       </div>
       <div class="footer-bottom">
         <p>
-          &copy;
+          &copy; <span id="year"></span> Long Beach WebWorks, LLC
           <script>
-            document.write(new Date().getFullYear());
+            document.getElementById("year").textContent =
+              new Date().getFullYear();
           </script>
-          Long Beach WebWorks, LLC
         </p>
         <div class="terms">
           <a href="/terms.html">Terms of Use</a>
